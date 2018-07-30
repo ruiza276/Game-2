@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaser", "Assembly-CSharp.csproj", "{938F4863-DF01-DA90-DE1D-982646A69D14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaser", "Assembly-CSharp-firstpass.csproj", "{C0184A53-0C83-3A0B-492A-A8B81B17FEA6}"
