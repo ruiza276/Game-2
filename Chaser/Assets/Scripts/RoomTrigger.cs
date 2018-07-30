@@ -5,6 +5,7 @@ using System;
 public class RoomTrigger : MonoBehaviour
 {
     public Boolean e=false;
+    public float timer;
     EnemyController2D em;
 
 
@@ -13,25 +14,26 @@ public class RoomTrigger : MonoBehaviour
             if (GameObject.Find("Player").GetComponent<CircleCollider2D>().attachedRigidbody)
             {
                 setTrigger(true);
+                setTimer(0);
+            }
         }
-        }
-            void OnTriggerExit2D(Collider2D collision)
+        void OnTriggerExit2D(Collider2D collision)
         {
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<CircleCollider2D>().attachedRigidbody)
             {
                 setTrigger(false);
+                setTimer(Time.realtimeSinceStartup);
             }
-        if (GameObject.FindGameObjectWithTag("Enemy").GetComponent<CircleCollider2D>().attachedRigidbody)
-        {
-            em = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyController2D>();
-
         }
-    }
-        //player speed setting
             void setTrigger(Boolean a)
-        {
-            e = a;
-        }
-    
+            {
+                e = a;
+            }
+
+            void setTimer(float a)
+            {
+                timer = a;
+            }
+
 
 }

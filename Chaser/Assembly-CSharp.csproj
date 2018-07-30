@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemyController2D.cs" />
+    <Compile Include="Assets\Scripts\playerController_scr.cs" />
     <Compile Include="Assets\Scripts\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\RoomTrigger.cs" />
     <Reference Include="UnityEditor.StandardEvents">
